@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+        function muestraOpcion(e) {
+            var opcionClickeada = e.target.alt;
+            var enlace;
+
+            if (opcionClickeada === "Facebook") {
+                enlace = "https://www.facebook.com/deivid.delcarpiovilca/";
+            } else if (opcionClickeada === "Instagram") {
+                enlace = "https://instagram.com/deividdelcarpiov?igshid=MzMyNGUyNmU2YQ==";
+            } else if (opcionClickeada === "WhatsApp") {
+                enlace = "https://web.whatsapp.com/";
+            }
+
+            if (enlace) {
+                window.open(enlace, "_blank");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="presentación">
+        <img class = "imagen1" src="imagenes/imagen.jpeg">
+        <h1>Deivid Jhon Del Carpio Vilca</h1>
+        <p>Tengo 18 años de edad y vivo en Arequipa actualmente,<br/> donde me encuentro estudiando.</p>
+        <hr>
+        <h2>Cosas que me apasionan:</h2>
+        <p>- Escuchar música<br/> - Comer <br/> - Jugar <br/> - Vivir</p>
+        <hr>
+        <h2>Tecnologías y lenguajes de Programación:</h2>
+        <p>- Python<br/>- Java<br/>- SQL<br/>- HTML y CSS</p>
+        <hr>
+        <h2>Formación Personal:</h2>
+        <p>- Estudiante en Tecsup</p>
+        <hr>
+        <h2>Idiomas:</h2>
+        <p>- Español<br/> - Ingles</p>
+        <hr>
+        <h2>Contacto por:</h2>
+        <p>Dale click a una de las opciones:</p>
+        <img class = "logos" src="imagenes/facebook.jpeg" alt = "Facebook" onclick="muestraOpcion(event)">
+        <img class = "logos" src="imagenes/instagram.jpeg" alt= "Instagram" onclick="muestraOpcion(event)">
+        <img class = "logos" src="imagenes/whatsapp.jpeg" alt= "WhatsApp" onclick="muestraOpcion(event)">
+    </div>
+
+</body>
+</html>
